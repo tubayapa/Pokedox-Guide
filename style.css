@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+  font-family: "Sniglet", system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423);
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 6px rgba(0, 0, 0, .3);
+}
+
+.search {
+  position: relative;
+}
+.searchInput {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 15px;
+  height: 10;
+  width: 15px;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.searchBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8BD369;
+  color: #fff;
+  border: none;
+  font-size: 33px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.search.active .searchInput {
+  width: 200px;
+  background-color: #fff;
+}
+.search.active .searchBtn {
+  left: 180px;
+  top: 5px;
+  color: tomato;
+  background-color: #fff;
+}
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
+  margin-top: 20px;
+}
+.pokemon {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: #fefefe;
+  border-radius: 10px;
+}
+
+.image-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+}
+.image-container img {
+  width: 180px;
+  opacity: 0.75;
+  transition: all .3s ease;
+}
+
+.pokemon:hover .image-container img{
+opacity: 1;
+transform: scale(1.25);
+}
+
+.poke-info{
+    margin-top: 20px;
+}
+.poke-id{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 3rem;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+.poke-name{
+    letter-spacing: 2px;
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+}
+.small small{
+    padding: 0 15px;
+}
+
+.poke-type{
+    margin-top: 10px;
+}
